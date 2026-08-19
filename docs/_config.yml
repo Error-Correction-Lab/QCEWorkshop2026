@@ -1,7 +1,7 @@
 title: "Quantum Error Correction: Quantum Low-Density Parity-Check Codes Workshop 2026"
-description: "Quantum Low-Density Parity-Check Codes Workshop at IEEE Quantum Week (QCE 2026)"
+description: "Quantum Low-Density Parity-Check Codes Workshop at IEEE Quantum Week 2026"
 url: "https://error-correction-lab.github.io"
-baseurl: "/QECWorkshop2026"
+baseurl: "/QCEWorkshop2026"
 repository: Error-Correction-Lab/QCEWorkshop2026
 markdown: kramdown
 
