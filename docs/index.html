@@ -1,0 +1,199 @@
+---
+layout: default
+title: "Quantum Error Correction: Quantum LDPC Codes"
+---
+
+<section class="section wrap" id="about">
+  <div class="section-heading">
+    <!-- <p class="kicker">About</p> -->
+    <h2>Workshop theme and objectives</h2>
+  </div>
+  <div class="about-grid">
+    <div class="lead-copy">
+      <!-- <p>This workshop aims to provide an overview of quantum LDPC codes, which have emerged as the leading candidate for achieving scalable, fault-tolerant quantum computation. Attendees will gain exposure to both foundational principles and recent advances, including code constructions, decoding techniques, logical operations and hardware implementations.</p> -->
+      <!-- <p>Quantum technologies have progressed rapidly in recent years, with experimental demonstrations of increasingly capable quantum processors. Despite these advances, noise and decoherence remain major obstacles to achieving large-scale quantum computation. Quantum error correction (QEC) is therefore essential for protecting quantum information and enabling reliable operation. Among various paradigms of quantum error correction, QLDPC codes have emerged as a particularly promising class from a practical point of view. Their sparse stabilizer structure enables efficient syndrome extraction and decoding, while recent theoretical breakthroughs demonstrate that such codes can achieve asymptotically good parameters, including constant rate and growing distance. These properties offer a potential pathway toward significantly reduced overheads compared to traditional topological codes. This workshop aims to serve as an interactive forum for researchers from both academia and industry to advance their understanding of QLDPC codes and the crucial role they play in scalable, fault-tolerant quantum computing. The workshop aims to explore key topics such as: (1) modern approaches to constructing QLDPC codes that take into account not only distance and rate, but also other important aspects such as handling noisy measurements; (2) advanced decoding techniques designed towards efficient and scalable practical implementation; and (3) performing computation with error-corrected logical qubits, with a focus on both code design to enable efficient realization of logical operations as well as practical challenges of implementation; and (4) experimental demonstrations of QLDPC codes, highlighting the key obstacles and practical approaches for deployment on present-day hardware. Thus, this workshop will equip attendees with a comprehensive understanding of the theory and practice of QLDPC codes, enabling them to contribute to the development of scalable, fault-tolerant quantum computing systems.</p> -->
+      <p>Quantum technologies have progressed rapidly in recent years, with experimental demonstrations of increasingly capable quantum processors. Despite these advances, noise and decoherence remain major obstacles to achieving large-scale quantum computation. Quantum error correction (QEC) is therefore essential for protecting quantum information and enabling reliable operation. Among various paradigms of quantum error correction, QLDPC codes have emerged as a particularly promising class from a practical point of view. Their sparse stabilizer structure enables efficient syndrome extraction and decoding, while recent theoretical breakthroughs demonstrate that such codes can achieve asymptotically good parameters, including constant rate and growing distance. These properties offer a potential pathway toward significantly reduced overheads compared to traditional topological codes.</p>
+      <p>This workshop aims to serve as an interactive forum for researchers from both academia and industry to advance their understanding of QLDPC codes and the crucial role they play in scalable, fault-tolerant quantum computing. Attendees will gain exposure to both foundational principles and recent advances, including code constructions, decoding techniques, logical operations and hardware implementations.</p>
+    </div>
+    <aside class="info-card">
+      <div><span class="info-label">Date</span><strong>September 15, 2026</strong></div>
+      <div><span class="info-label">Time</span><strong>10:00 AM – 4:30 PM</strong></div>
+      <div><span class="info-label">Venue</span><strong>Room 715B</strong></div>
+      <div><span class="info-label">Conference</span><strong><a href="https://qce.quantum.ieee.org/" target="_blank" rel="noopener">IEEE Quantum Week (QCE 2026)</a></strong></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt" id="speakers">
+  <div class="wrap">
+    <div class="section-heading">
+      <!-- <p class="kicker">Invited speakers</p> -->
+      <h2>Invited speakers</h2>
+      <p class="section-intro">Click a speaker or talk title to jump to the full abstract and biography.</p>
+    </div>
+    <div class="speaker-grid">
+      {% for speaker in site.data.speakers %}
+      <a class="speaker-card" href="#{{ speaker.id }}">
+        <div class="photo-shell">
+          <img src="{{ speaker.photo | relative_url }}" alt="Photo of {{ speaker.name }}" onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');">
+          <span class="photo-placeholder">Add photo</span>
+        </div>
+        <div class="speaker-card-copy">
+          <h3>{{ speaker.name }}</h3>
+          <p class="affiliation">{{ speaker.affiliation }}</p>
+          <p class="card-talk">{{ speaker.title }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section wrap" id="program">
+  <div class="section-heading"> -->
+    <!-- <p class="kicker">Program</p> -->
+    <!-- <h2>Workshop schedule</h2>
+  </div>
+  <div class="schedule">
+    {% for item in site.data.schedule %}
+      {% if item.type == "talk" %}
+        {% assign speaker = site.data.speakers | where: "id", item.speaker | first %}
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">{{ item.time }}</div>
+          <div class="schedule-content">
+            <a href="#{{ speaker.id }}"><strong>{{ speaker.name }}</strong></a>
+            <span>{{ speaker.affiliation }}</span>
+            <em>{{ speaker.title }}</em>
+          </div>
+        </div>
+      {% else %}
+        <div class="schedule-row schedule-{{ item.type }}">
+          <div class="schedule-time">{{ item.time }}</div>
+          <div class="schedule-content"><strong>{{ item.label }}</strong></div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div> -->
+<!-- </section> -->
+
+<section class="section wrap" id="program">
+  <div class="section-heading">
+    <!-- <p class="kicker">Program</p> -->
+    <h2>Workshop schedule</h2>
+  </div>
+
+  <div class="schedule">
+    {% for item in site.data.schedule %}
+
+      {% if item.type == "talk" %}
+
+        {% assign speaker = site.data.speakers | where: "id", item.speaker | first %}
+
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">{{ item.time }}</div>
+          <div class="schedule-content">
+            <a href="#{{ speaker.id }}"><strong>{{ speaker.name }}</strong></a>
+            <span>{{ speaker.affiliation }}</span>
+            <em>{{ speaker.title }}</em>
+          </div>
+        </div>
+
+      {% elsif item.type == "session" %}
+
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">{{ item.time }}</div>
+          <div class="schedule-content">
+            <strong>{{ item.label }}</strong>
+          </div>
+        </div>
+
+      {% else %}
+
+        <div class="schedule-row schedule-{{ item.type }}">
+          <div class="schedule-time">{{ item.time }}</div>
+          <div class="schedule-content">
+            <strong>{{ item.label }}</strong>
+          </div>
+        </div>
+
+      {% endif %}
+
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-alt" id="talks">
+  <div class="wrap">
+    <div class="section-heading">
+      <!-- <p class="kicker">Talks</p> -->
+      <h2>Abstracts</h2>
+    </div>
+
+    <div class="talk-list">
+      {% for speaker in site.data.speakers %}
+      <article class="talk-card" id="{{ speaker.id }}">
+        <div class="talk-photo photo-shell">
+          <img src="{{ speaker.photo | relative_url }}" alt="Photo of {{ speaker.name }}" onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');">
+          <span class="photo-placeholder">Add photo</span>
+        </div>
+        <div class="talk-copy">
+          <p class="talk-speaker">{{ speaker.name }}</p>
+          <p class="affiliation">{{ speaker.affiliation }}</p>
+          <h3>{{ speaker.title }}</h3>
+
+          <details class="abstract" open>
+            <summary>Abstract</summary>
+            <p>{{ speaker.abstract }}</p>
+          </details>
+
+          <div class="bio">
+            <details class="abstract" open>
+              <summary><strong>About {{ speaker.name }}</strong></summary>
+              <p>{{ speaker.bio }}</p>
+          
+              {% if speaker.website %}
+              <p>
+                <a class="text-link" href="{{ speaker.website }}" target="_blank" rel="noopener">
+                  Speaker website ↗
+                </a>
+              </p>
+              {% endif %}
+            </details>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section wrap" id="topics">
+  <div class="section-heading">
+    <p class="kicker">Scope</p>
+    <h2>Topics covered</h2>
+  </div>
+  <div class="topic-grid">
+    <div>Quantum error-correcting codes</div>
+    <div>Efficient decoding algorithms and implementations</div>
+    <div>FTQC architectures for large-scale systems</div>
+    <div>Logical operations and error rates at scale</div>
+    <div>Overhead–performance tradeoffs</div>
+    <div>Hardware constraints and QEC</div>
+  </div>
+</section> -->
+
+<section class="section section-alt" id="organizers">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="kicker">Organizers</p>
+      <!-- <h2>Program chairs</h2> -->
+    </div>
+    <div class="organizer-grid">
+      <div><strong>Shobhit Bhatnagar</strong><span>University of Arizona</span></div>
+      <div><strong>Francisco Garcia-Herrero</strong><span>Universidad Complutense de Madrid</span></div>
+      <div><strong>Valentin Savin</strong><span>Quobly</span></div>
+      <div><strong>Nithin Raveendran</strong><span>University of Arizona</span></div>
+      <div><strong>Bane Vasic</strong><span>University of Arizona</span></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">IEEE Quantum Week 2026 Wrokshop</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#program">Program</a>
+        <a href="#organizers">Organizers</a>
+      </div>
+    </nav>
+    <div class="hero-content wrap">
+      <p class="eyebrow">IEEE Quantum Week · QCE 2026</p>
+      <h1>Quantum Error Correction:<br>Quantum Low-Density Parity-Check Codes Workshop</h1>
+      <p class="hero-subtitle">Codes, decoding, architectures and pathways to fault-tolerant quantum computing.</p>
+      <div class="event-meta">
+        <span>September 15, 2026</span>
+        <span>Room 715B · Metro Toronto Convention Center</span>
+      </div>
+      <a class="button" href="#program">View program</a>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p>Quantum Error Correction: Quantum Low-Density Parity-Check Codes Workshop · IEEE Quantum Week 2026</p>
+      <p><a href="mailto:shobhitb97@gmail.com">shobhitb97@gmail.com</a></p>
+      <p><a href="mailto:francg18@ucm.es">francg18@ucm.es</a></p>
+    </div>
+  </footer>
+</body>
+</html>

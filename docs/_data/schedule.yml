@@ -1,0 +1,43 @@
+# - time: "09:55 – 10:00"
+#   type: general
+#   label: "Welcome and opening remarks"
+
+- time: "10:00 – 10:30"
+  type: talk
+  speaker: speaker-one
+
+- time: "10:30 – 11:00"
+  type: talk
+  speaker: speaker-two
+
+- time: "11:00 – 11:30"
+  type: talk
+  speaker: speaker-three
+
+- time: "11:30 – 13:00"
+  type: break
+  label: "Break"
+
+- time: "13:00 – 13:30"
+  type: talk
+  speaker: speaker-four
+
+- time: "13:30 – 14:00"
+  type: talk
+  speaker: speaker-five
+
+- time: "14:00 – 14:30"
+  type: talk
+  speaker: speaker-six
+
+- time: "14:30 – 15:00"
+  type: break
+  label: "Break"
+
+- time: "15:00 – 16:00"
+  type: session
+  label: "Panel Discussion"
+
+- time: "16:00 – 16:30"
+  type: session
+  label: "Open Q&A and networking"

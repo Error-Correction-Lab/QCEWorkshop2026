@@ -1,0 +1,65 @@
+- id: speaker-one
+  name: "Priya J. Nadkarni"
+  affiliation: "Xanadu"
+  photo: "assets/images/speakers/Priya_Nadkarni_Xanadu.jpg"
+  # website: "https://example.com"
+  title: "Fault-Tolerant Logical Operations in Photonic GKP-qLDPC Code-based Architectures via Homological Measurements"
+  abstract: >-
+    Photonics offers a highly networkable hardware platform, unlocking critical flexibility in the design and implementation of advanced quantum error-correcting codes. The platform enables modular, networkable computation with room-temperature integration, unlocking new flexibility in the choice of error-correcting codes. In this talk, I will detail Xanadu’s approach to photonic fault-tolerant quantum computing using concatenated GKP-qLDPC codes. I will first provide an overview of the architecture's foundational components before diving into the core theoretical challenge of performing reliable logical operations. I will address this by presenting our methodology for executing fault-tolerant quantum computation using Pauli product measurements (PPMs), driven by our design approach based on homological measurements. This approach requires a number of ancillary qubits that scales linearly with the weight of the measured logical operator, while preserving the code distance. Finally, I will share numerical simulation results that validate these methods and highlight its advantages.
+  bio: >-
+    Priya J. Nadkarni is a Lead Quantum Architecture Scientist at Xanadu, leading the design efforts for logical magic state factories in fault-tolerant, bosonic-based photonic quantum computers. She earned her Ph.D. and M.Sc. in Engineering from IISc Bengaluru, and a B.E. from BMS College of Engineering. Prior to her doctorate, she worked in RF R&D at National Instruments. Dr. Nadkarni’s research spans quantum error correction, fault-tolerant quantum computation, and quantum communication. Her work is widely published and presented at premier events, including various IEEE conferences, the 2024 QuIK Workshop, the QEC Conference, etc. She is an IEEE HKN member and has served as Chair of the IEEE-IISc ComSoc Student Chapter, Secretary of IEEE-IISc WISE, and Corresponding Secretary of the IEEE-IISc HKN Chapter. Her contributions have been recognized with the IEEE Bangalore Section's "Best Researcher Award – IISc" and the IEEE-IISc Outstanding Officer Award.
+
+- id: speaker-two
+  name: "Sam Smith"
+  affiliation: "Iceberg Quantum"
+  photo: "assets/images/speakers/Sam_Smith_Iceberg.jpg"
+  # website: "https://example.com"
+  title: "Towards deploying LDPC based fault-tolerant architectures"
+  abstract: >-
+    LDPC-based architectures have the potential to significantly reduce the resources required to run useful algorithms on fault-tolerant quantum computers. On the theory side, much of this progress happens at a hardware-agnostic level, through work that pushes down overheads independently of any particular device. On the hardware side, there are now a diverse range of LDPC-compatible platforms capable of going beyond nearest-neighbour fixed connectivity and with plans to scale to the size required for useful quantum computing within the next few years. As these two lines of progress converge, an important priority becomes hardening and deploying these efficient fault-tolerant architectures for real devices. This talk offers a snapshot of that work at Iceberg Quantum, focusing on how architectures like Pinnacle can be realised across today's rapidly advancing hardware platforms and integrated with the surrounding software stack.
+  bio: >-
+    Sam Smith is a co-founder of Iceberg Quantum, which designs low-overhead LDPC based fault-tolerant architectures for useful quantum computing. At Iceberg, Sam is particularly interested in ecosystem integration, as well as validating and deploying fault-tolerance techniques on hardware.
+
+- id: speaker-three
+  name: "Daryus Chandra"
+  affiliation: "Photonic Inc."
+  photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  # website: "https://example.com"
+  title: "Designing QLDPC Codes: The Hidden Work Behind End-to-End Fault-Tolerant Computation"
+  abstract: >-
+    Recent years have produced an increasingly rich landscape of quantum low-density parity-check (QLDPC) codes with attractive code parameters, thresholds, and asymptotic scaling properties. Yet a QLDPC code is only the starting point for a fault-tolerant computing architecture. Turning a code into a practical computing system requires solving a series of interconnected problems that are often far more challenging than the code construction itself: implementing logical gates, compiling algorithms into native operations, designing decoders, minimizing latency, constructing syndrome-extraction schedules, modeling circuit-level noise, and ultimately determining the true space-time cost of computation. This workshop explores the hidden work required to transform a promising QLDPC code into a complete fault-tolerant computing stack. Using the SHYPS (Subsystem Hypergraph Product Simplex) codes as a case study, we follow the path from code construction through logical gate design, efficient Clifford compilation, low-latency sliding-window decoding, detector construction for logical circuits, and deep circuit-level simulations of fault-tolerant computation. Rather than focusing on any single advance, the workshop examines how each layer of the stack constrains and informs the others, and why progress at one layer is often insufficient without corresponding advances elsewhere. Emphasis will be placed on the practical challenges that are rarely captured by code parameters alone: decoder latency, logical clock-cycle design, syndrome-processing assumptions, compilation overheads, and the interaction between logical operations and error correction. We will discuss how seemingly small implementation choices can have significant consequences for overall computational performance and resource requirements. The goal of the workshop is to provide a framework for evaluating QLDPC architectures end-to-end. Attendees will gain insight into the questions that must be answered before a code can support useful fault-tolerant computation and why demonstrating a complete computational workflow is increasingly as important as the underlying code construction itself.
+  bio: >-
+    Daryus Chandra is a Senior Quantum Error Correction Developer at Photonic Inc., where he focuses on scalable approaches to fault-tolerant quantum computing. His work spans quantum low-density parity-check (QLDPC) codes, distributed error correction, and the integration of error correction with system architecture. Daryus has contributed to the development of advanced QLDPC code frameworks, including pioneering work on SHYPS codes, and is an author on widely cited research in quantum error correction, quantum information, and quantum communications.  He is a co-author of the book From Classical to Quantum Coding (published by Wiley-IEEE) and has presented on scalable and distributed quantum error correction at international forums, including the Quantum Datacenter Alliance. He holds a Ph.D. from the University of Southampton UK, with a research background bridging classical and quantum coding theory.
+
+- id: speaker-four
+  name: "Edwin Tham"
+  affiliation: "IonQ"
+  # photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  # website: "https://example.com"
+  title: "Practical roadmap to qubit-efficient fault-tolerance with walking cats."
+  abstract: >-
+    Trapped-ion devices benefit from two significant advantages compared to other physical modalities: very low-noise physical gates and ease of transport. I will describe how we leverage these advantages to design a fault-tolerant architecture built on top of novel high-rate quantum low-density parity-check (qLDPC) codes. Low-loss ion transport allows syndrome circuits of qLDPC codes to be implemented with only a small number of transport steps, instead of difficult-to-implement long-range physical gates. Performant physical gates in turn allow us to prepare and verify high-quality cat-states, which are transported between blocks to realize logic via Pauli measurements. Finally, I will also describe efficient magic factories built on novel bicycle codes that admit strongly transversal Hadamard gates, that distills H-states within very small space-time footprints.
+  bio: >-
+    TBA
+
+- id: speaker-five
+  name: "Madelyn Caine"
+  affiliation: "Oratomic"
+  # photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  # website: "https://example.com"
+  title: "TBA"
+  abstract: >-
+    TBA
+  bio: >-
+    TBA
+
+- id: speaker-six
+  name: "Krysta"
+  affiliation: "Nvidia"
+  # photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  # website: "https://example.com"
+  title: "TBA"
+  abstract: >-
+    TBA
+  bio: >-
+    TBA
