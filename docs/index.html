@@ -54,33 +54,6 @@ title: "Quantum Error Correction: Quantum LDPC Codes"
     <!-- <p class="kicker">Program</p> -->
     <!-- <h2>Workshop schedule</h2>
   </div>
-  <div class="schedule">
-    {% for item in site.data.schedule %}
-      {% if item.type == "talk" %}
-        {% assign speaker = site.data.speakers | where: "id", item.speaker | first %}
-        <div class="schedule-row schedule-talk">
-          <div class="schedule-time">{{ item.time }}</div>
-          <div class="schedule-content">
-            <a href="#{{ speaker.id }}"><strong>{{ speaker.name }}</strong></a>
-            <span>{{ speaker.affiliation }}</span>
-            <em>{{ speaker.title }}</em>
-          </div>
-        </div>
-      {% else %}
-        <div class="schedule-row schedule-{{ item.type }}">
-          <div class="schedule-time">{{ item.time }}</div>
-          <div class="schedule-content"><strong>{{ item.label }}</strong></div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div> -->
-<!-- </section> -->
-
-<section class="section wrap" id="program">
-  <div class="section-heading">
-    <!-- <p class="kicker">Program</p> -->
-    <h2>Workshop schedule</h2>
-  </div>
 
   <div class="schedule">
     {% for item in site.data.schedule %}
@@ -111,6 +84,73 @@ title: "Quantum Error Correction: Quantum LDPC Codes"
 
         <div class="schedule-row schedule-{{ item.type }}">
           <div class="schedule-time">{{ item.time }}</div>
+          <div class="schedule-content">
+            <strong>{{ item.label }}</strong>
+          </div>
+        </div>
+
+      {% endif %}
+
+    {% endfor %}
+  </div>
+</section> -->
+
+<section class="section wrap" id="program">
+  <div class="section-heading">
+    <!-- <p class="kicker">Program</p> -->
+    <h2>Workshop schedule</h2>
+  </div>
+
+  <div class="schedule">
+    {% for item in site.data.schedule %}
+
+      {% if item.type == "talk" %}
+
+        {% assign speaker = site.data.speakers | where: "id", item.speaker | first %}
+
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">{{ item.time }}</div>
+
+          <div class="schedule-content">
+            <a href="#{{ speaker.id }}">
+              <strong>{{ speaker.name }}</strong>
+            </a>
+
+            <span>{{ speaker.affiliation }}</span>
+            <em>{{ speaker.title }}</em>
+          </div>
+        </div>
+
+      {% elsif item.type == "session" %}
+
+        <div class="schedule-row schedule-talk">
+          <div class="schedule-time">{{ item.time }}</div>
+
+          <div class="schedule-content">
+            <strong>{{ item.label }}</strong>
+
+            {% if item.slido %}
+              <span>
+                <!-- Submit a question or upvote questions from other attendees. -->
+              </span>
+
+              <a
+                class="text-link"
+                href="{{ item.slido }}"
+                target="_blank"
+                rel="noopener"
+              >
+                Submit a question for the panel ↗
+              </a>
+            {% endif %}
+          </div>
+        </div>
+
+      {% else %}
+
+        <div class="schedule-row schedule-{{ item.type }}">
+          <div class="schedule-time">{{ item.time }}</div>
+
           <div class="schedule-content">
             <strong>{{ item.label }}</strong>
           </div>

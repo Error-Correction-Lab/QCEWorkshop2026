@@ -18,26 +18,27 @@
   type: break
   label: "Break"
 
-- time: "13:00 – 13:30"
-  type: talk
-  speaker: speaker-four
-
-- time: "13:30 – 14:00"
-  type: talk
-  speaker: speaker-five
+- time: "13:00 – 14:00"
+  type: session
+  label: "Panel Discussion"
+  slido: "https://app.sli.do/event/bshMsUTTTesQgB7Cpww3G3"
 
 - time: "14:00 – 14:30"
-  type: talk
-  speaker: speaker-six
+  type: session
+  label: "Open Q&A and networking"
 
 - time: "14:30 – 15:00"
   type: break
   label: "Break"
 
-- time: "15:00 – 16:00"
-  type: session
-  label: "Panel Discussion"
+- time: "15:00 – 15:30"
+  type: talk
+  speaker: speaker-four
+
+- time: "15:30 – 16:00"
+  type: talk
+  speaker: speaker-five
 
 - time: "16:00 – 16:30"
-  type: session
-  label: "Open Q&A and networking"
+  type: talk
+  speaker: speaker-six
