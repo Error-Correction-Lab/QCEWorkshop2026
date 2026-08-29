@@ -8,7 +8,7 @@
 
 - time: "10:30 – 11:00"
   type: talk
-  speaker: speaker-two
+  speaker: speaker-six
 
 - time: "11:00 – 11:30"
   type: talk
@@ -41,4 +41,4 @@
 
 - time: "16:00 – 16:30"
   type: talk
-  speaker: speaker-six
+  speaker: speaker-two

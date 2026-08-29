@@ -54,12 +54,12 @@
     TBA
 
 - id: speaker-six
-  name: "Krysta M. Svore"
+  name: "Muyuan Li"
   affiliation: "Nvidia"
-  # photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  photo: "assets/images/speakers/Muyuan_Li_Nvidia.jpg"
   # website: "https://example.com"
   title: "TBA"
   abstract: >-
     TBA
   bio: >-
-    TBA
+    Muyuan Li is a senior quantum error correction research scientist at NVIDIA, where he works on quantum error correction research and explores novel methods for leveraging classical HPC and AI techniques to advance fault-tolerant quantum computing systems. Prior to joining NVIDIA, Muyuan was a research staff member at IBM Quantum. He received his PhD in Computational Science and Engineering from the Georgia Institute of Technology.
