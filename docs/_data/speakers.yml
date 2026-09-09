@@ -58,8 +58,8 @@
   affiliation: "Nvidia"
   photo: "assets/images/speakers/Muyuan_Li_Nvidia.jpg"
   # website: "https://example.com"
-  title: "TBA"
+  title: "From QEC Code Design to Real-Time Decoding: GPU- and AI-Accelerated Paths to Practical qLDPC Fault Tolerance"
   abstract: >-
-    TBA
+    Quantum LDPC codes offer a route to lower-overhead fault tolerance, but their practical value depends on co-design across code construction, logical operations, syndrome extraction, and low-latency decoding. This talk presents recent QEC research at NVIDIA, from theoretical advances relevant to code construction and fault-tolerant operations to GPU- and AI-accelerated approaches for evaluating and decoding practical qLDPC architectures. I will also discuss NVIDIA’s decoding software stack, including CUDA-Q QEC implementations of belief propagation, BP+OSD, and Relay-BP for qLDPC codes, alongside NVIDIA Ising AI pre-decoders for surface and color codes. Although these tools are presently demonstrated most directly for different code families, they point toward a broader path for structure-aware, GPU- and AI-accelerated qLDPC decoding and real-time QEC infrastructure.
   bio: >-
     Muyuan Li is a senior quantum error correction research scientist at NVIDIA, where he works on quantum error correction research and explores novel methods for leveraging classical HPC and AI techniques to advance fault-tolerant quantum computing systems. Prior to joining NVIDIA, Muyuan was a research staff member at IBM Quantum. He received his PhD in Computational Science and Engineering from the Georgia Institute of Technology.
