@@ -34,13 +34,13 @@
 - id: speaker-four
   name: "Edwin Tham"
   affiliation: "IonQ"
-  # photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  photo: "assets/images/speakers/Edwin_Tham_IonQ.jpg"
   # website: "https://example.com"
   title: "Practical roadmap to qubit-efficient fault-tolerance with walking cats."
   abstract: >-
     Trapped-ion devices benefit from two significant advantages compared to other physical modalities: very low-noise physical gates and ease of transport. I will describe how we leverage these advantages to design a fault-tolerant architecture built on top of novel high-rate quantum low-density parity-check (qLDPC) codes. Low-loss ion transport allows syndrome circuits of qLDPC codes to be implemented with only a small number of transport steps, instead of difficult-to-implement long-range physical gates. Performant physical gates in turn allow us to prepare and verify high-quality cat-states, which are transported between blocks to realize logic via Pauli measurements. Finally, I will also describe efficient magic factories built on novel bicycle codes that admit strongly transversal Hadamard gates, that distills H-states within very small space-time footprints.
   bio: >-
-    TBA
+    Edwin received a PhD in Quantum Optics, Atomic and Molecular (QOAMO) physics from the University of Toronto. After graduating, he co-founded Agnostiq Inc., a startup focused on secure cryptographic protocols for delegated quantum computing; that startup was acquired by DataRobot Inc. in 2025. He then joined Entangled Networks, another Toronto based startup, as a researcher on compilation and circuit synthesis for distributed quantum systems. That startup was then acquired by IonQ, where he continues to work today as a staff researcher in quantum error-correction.
 
 - id: speaker-five
   name: "Madelyn Caine"
