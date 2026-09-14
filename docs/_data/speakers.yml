@@ -45,13 +45,13 @@
 - id: speaker-five
   name: "Madelyn Caine"
   affiliation: "Oratomic"
-  # photo: "assets/images/speakers/Daryus_Chandra_Photonic.jpg"
+  photo: "assets/images/speakers/Madelyn_Caine_Oratomic.jpg"
   # website: "https://example.com"
-  title: "TBA"
+  title: "Low-overhead, fault-tolerant quantum computation with neutral atoms"
   abstract: >-
-    TBA
+    Quantum computers offer a new paradigm for scientific discovery, but their practical realization is fundamentally limited by decoherence. Quantum error correction (QEC) provides a route to overcome this challenge by encoding protected logical qubits into many redundant physical qubits. However, efficiently encoding, manipulating, and scaling logical qubits in hardware to realize useful computation remains a central open problem. In this talk, I will describe experimental and theoretical advances that substantially narrow the gap between neutral-atom hardware and utility-scale computation. First, I will present demonstrations of the key building blocks of universal, fault-tolerant quantum processing with reconfigurable neutral-atom arrays, including logical performance roughly a factor of two below threshold. I will then discuss theoretical results that substantially reduce the overhead of fault-tolerant computation. By leveraging high-rate quantum error-correcting codes, efficient logical instruction sets, and optimized circuit design, we show that Shor's algorithm can be executed at cryptographically relevant scales with as few as 10,000 reconfigurable atomic qubits. Adding physical qubits improves runtime by enabling greater parallelism: under plausible assumptions, discrete logarithms on the P-256 elliptic curve could be computed in a few days with 26,000 physical qubits, while factoring RSA-2048 integers would take one to two orders of magnitude longer. Although substantial engineering challenges remain, this analysis indicates that an appropriately designed neutral-atom architecture could support utility-scale quantum computation. More broadly, these results highlight the promise of neutral atoms for fault-tolerant quantum computing, with wide-ranging scientific and technological applications.
   bio: >-
-    TBA
+    Maddie Cain is the lead theoretical scientist at Oratomic, where she works on building fault-tolerant quantum computers based on reconfigurable arrays of neutral atoms. She previously completed her Ph.D. in Physics at Harvard in Mikhail Lukin's group, focusing on quantum error correction and algorithms for neutral atoms. 
 
 - id: speaker-six
   name: "Muyuan Li"
